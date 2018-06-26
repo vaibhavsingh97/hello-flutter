@@ -1,8 +1,7 @@
 # hello_world
 
-A new Flutter project.
+A new Hello World Flutter project.
 
-## Getting Started
+## Demo
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+![](/screenshots/demo.png)
