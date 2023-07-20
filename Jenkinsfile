@@ -7,6 +7,7 @@ pipeline {
                 // Set up Flutter SDK
                 sh 'flutter config --no-analytics'
                 sh 'flutter doctor'
+                sh 'flutter clean'
                 sh 'flutter test'
                 // Get dependencies
                 sh 'flutter pub get'
