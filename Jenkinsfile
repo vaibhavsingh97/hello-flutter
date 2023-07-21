@@ -8,17 +8,14 @@ pipeline {
                 sh 'flutter config --no-analytics'
                 sh 'flutter doctor'
                 sh 'flutter clean'
-                sh 'flutter test'
                 // Get dependencies
                 sh 'flutter pub get'
-
+                sh 'flutter test'
                 // Build the app
                 sh 'flutter build apk'  // for Android
                 // or
                 // sh 'flutter build ios'  // for iOS
 
-                // Optionally, run tests
-                // sh 'flutter test'
             }
         }
     }
