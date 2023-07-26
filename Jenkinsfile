@@ -12,7 +12,11 @@ pipeline {
                 sh 'flutter pub get'
                 sh 'flutter test'
                 // Build the app
-                sh 'flutter build apk'  // for Android
+               // sh 'flutter build apk'  // for Android
+                sh '''
+                    #!/bin/sh
+                    flutter build apk --debug
+                '''
                 // or
                 // sh 'flutter build ios'  // for iOS
 
